@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<script>
+var answer = 0;
+
+alert("Hello! It's time to play!");
+
+var question_1 = prompt("Capital of Japan?");
+if (question_1 == "Tokyo") {
+alert("Good!");	
+answer = answer + 1;
+} else {
+alert("You can do better!");	
+}
+
+var question_2 = prompt("Capital of Russia?");
+if (question_2 == "Moscow") {
+answer = answer + 1;
+alert("Great!");
+} else {
+alert("Oh, it's sad!");	
+}
+
+if (answer == 2) {
+alert("Correct answers: " + answer + "! Great job!");
+} else if (answer == 1) {
+alert("Correct answers: " + answer + "! Next time you'll rock!");
+} else if (answer < 1) {
+alert(answer + " correct answers! Try once again!");	
+}
+
+</script>
