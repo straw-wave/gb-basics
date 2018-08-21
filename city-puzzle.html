@@ -1,0 +1,51 @@
+<meta charset="utf-8">
+<title>City puzzle</title>
+<script>
+//Intro
+alert("Hello! Let's play a game of capitals!");
+
+//Puzzle 1 block	
+var puzzle_1 = prompt("The capital of Great Britain?");
+if (puzzle_1 == "London" || puzzle_1 == "london") {
+	puzzle_1 = 1; 
+} 
+else {
+	puzzle_1 = 0
+}
+puzzle_1 = parseInt(puzzle_1);
+
+//Puzzle 2 block
+var puzzle_2 = prompt("What is the capital of Japan?");
+if (puzzle_2 == "Tokyo" || puzzle_2 == "tokyo") {
+	puzzle_2 = 1; 
+} 
+else {
+	puzzle_2 = 0
+}
+puzzle_2 = parseInt(puzzle_2);
+
+//Puzzle 3 block
+var puzzle_3 = prompt("What is the capital of Côte d’Ivoire?");
+if (puzzle_3 == "Yamoussoukro" || puzzle_3 == "yamoussoukro") {
+	puzzle_3 = 1; 
+} 
+else {
+	puzzle_3 = 0
+}
+puzzle_3 = parseInt(puzzle_3);
+
+//The calculation and display of the results 
+var result = (puzzle_1+puzzle_2+puzzle_3)
+if (result == 1 && puzzle_3 != 1) {
+	alert("1 correct answer. Try again!");
+} else if (result == 1 && puzzle_3 == 1) {
+	alert("1 correct answer. But you know Yamoussoukro! o_O");
+} else if (result == 2 && puzzle_3 != 1) {
+	alert("2 correct answers. And yeah, the capital of Côte d’Ivoire is Yamoussoukro.");
+} else if (result == 2 && puzzle_3 == 1) {
+	alert("2 correct answers. You know Yamoussoukro, that's impressive.");
+} else if (result == 3) {
+	alert("3 correct asnwers! I bet you Googled Yamoussoukro! ;)");
+} else 
+	alert("No correct answers! Have you been banned from Google?");
+</script>
