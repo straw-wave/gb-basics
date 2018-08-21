@@ -11,3 +11,5 @@ This repository contains the files that are created and modified within the scop
 * `city-puzzle.html` - A little game where a user is asked to answer questions about capitals.
 
 * `cat.html` - Verify the cat's essence.
+
+Test.
