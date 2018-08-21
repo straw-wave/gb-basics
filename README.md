@@ -4,6 +4,6 @@ This repository contains the files that are created and modified within the scop
 
 ## Files:
 
-* hello.html - The first step.
-* multiplication.html - The multiplication action (var, prompt).
-* cat.html - Verify the cat's essence.
+* `hello.html` - The first step.
+* `multiplication.html` - The multiplication action (var, prompt).
+* `cat.html` - Verify the cat's essence.
