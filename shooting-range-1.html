@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<script>
+var angle;
+var hits = 0;
+var targets = 2;
+
+alert("You have two targets. Set the angle and the gun will shoot!");
+
+angle = parseInt(prompt("The targets are ahead! Set the angle!"));
+if (angle >= 30 && angle <= 50 || angle >= 60 && angle <= 80) {
+	alert("One target is down!");
+	targets = targets - 1;
+	hits = hits + 1;
+} 
+else {
+	alert("Missed!"); 	
+}
+
+alert("Your hits: " + hits + ".");
+alert("Targets left: " + targets + ".");
+</script>
