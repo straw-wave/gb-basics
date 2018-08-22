@@ -20,6 +20,9 @@ This repository contains the files that are created and modified within the scop
 ## Shooting range games:
 
 * `shooting-range-1.html` - The first version. The game checks whether a user hits one of two ranges. There is no support of detecting which target has been hit so far.
-
+* `shooting-range-1.html` - A better version of the shooting game: 
+  * Now the game knows how many shots a user have made.
+  * The game informs a user about the number of a target has been eliminated.
+  
 ## P.S.
 * `cat.html` - Verify the cat's essence.
