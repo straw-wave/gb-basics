@@ -1,0 +1,67 @@
+<meta charset="utf-8">
+<script>
+var angle;
+var range_1 = 1;
+var range_2 = 1;
+var shots = 0;
+
+alert("Hello! Let's imagine there are two targets that you have to eliminate. Set the angle of your gun to shoot. You have an andless storage of missiles, so take your time.");
+
+//The first step: user can hit 1st target, 2nd target, or miss. 
+do {
+	angle = prompt("First shot! Set the angle: ");
+	angle = parseInt(angle);
+	shots = shots + 1;
+	if ( (angle >=30) && (angle <= 50) ) {
+	range_1 = 0;
+	alert("Target 1 is down!");
+	} else if ((angle >= 70) && (angle <= 90 )) {
+	range_2 = 0;
+	alert("Target 2 is down!"); 
+	} else {
+	alert("Try again!");
+	}
+}	while (range_1 == 1 && range_2 == 1);
+
+//Cycle that makes sure that the first target is down.
+while (range_1 != 0) {
+	if (range_2 == 0) {
+		angle = prompt("Another shot! Set the angle: ");
+		angle = parseInt(angle);
+		shots = shots + 1;
+		if ((angle >= 30) && (angle <= 50 )) {
+		range_1 = 0;
+		alert("Target 1 is down!");
+		}
+		else {
+		alert("Missed!");
+		} 	
+
+	}
+} 
+
+//Cycle that makes sure that the second target is down.
+while (range_2 != 0) {
+	if (range_1 == 0) {
+		angle = prompt("Another shot! Set the angle: ");
+		angle = parseInt(angle);
+		shots = shots + 1;
+		if ((angle >= 70) && (angle <= 90 )) {
+		range_2 = 0;
+		alert("Target 2 is down!");
+		}
+		else {
+		alert("Missed!");
+		} 	
+	}
+}
+
+//Results
+if (shots == 2) {
+	alert("Sniper! It took you only " + shots + " shots to eliminate both targets!");
+} else if ((shots >=3) && (shots <= 10)) {
+	alert("It took you " + shots + " shots to eliminate both targets! Good job!");
+} else {
+	alert("You have made " + shots + " shots! Well, a lot of missiles are thrown aroung now.");
+}
+</script>
