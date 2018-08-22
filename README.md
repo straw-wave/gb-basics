@@ -15,5 +15,9 @@ This repository contains the files that are created and modified within the scop
 * `puzzle-2.html` - Created a new game with only one "answers" variable and variable for each question.
 * `puzzle-3.html` - Created a new game with one `score` and one `answer` variable. The `score` remembers the overall score (and changes after each question, if necessary). The same `answer` variable is used for each question and it can be assigned different values.      
 
+### Shooting range games:
+
+* `shooting-range-1.html` - The first version. The game checks whether a user hits one of two ranges. There is no support of detecting which target has been hit so far.
+
 ## P.S.
 * `cat.html` - Verify the cat's essence.
