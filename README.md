@@ -9,6 +9,7 @@ This repository contains the files that are created and modified within the scop
 * `if-else-if-else.html` - The `if - else if - if` statement.
 * `parseInt.html` - The `parseInt()` function.
 * `cycle-while.html` - The WHILE cycle.
+* `cycle-do.html` - The DO cycle.
 
 ## Puzzle games:
 
