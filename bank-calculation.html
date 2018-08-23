@@ -1,0 +1,10 @@
+<meta charset="utf-8">
+<script>
+var sum = parseInt(prompt("The sum of money you would like to place upon deposit:"));
+var percent = parseInt(prompt("Specify the percentage:"));
+var time = parseInt(prompt("How many years:"));
+for (var calc = 1; calc <= time; calc++) {
+	sum = (sum) + (sum * (percent/100)); 
+	alert("After " + calc + " years your sum will be: " + sum + ".")
+}
+</script>
