@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+<script>
+var shot = 0;
+var bullet_number;
+
+do {
+	bullet_number = parseInt((Math.random() * 6) +1 );
+	if (bullet_number == 1 ) {
+		alert("The game is over!");
+		shot++;
+		break;
+	}
+	shot++;
+} while (true); 
+
+alert("The number of shots: " + shot);
+
+</script>
