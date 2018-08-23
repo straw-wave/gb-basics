@@ -24,5 +24,9 @@ This repository contains the files that are created and modified within the scop
   * Now the game knows how many shots a user have made.
   * The game informs a user about the number of a target has been eliminated.
   
+## Roulette games: 
+
+* `roulette-1.html` - The first version. The game counts the number of shots.
+  
 ## P.S.
 * `cat.html` - Verify the cat's essence.
