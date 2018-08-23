@@ -27,6 +27,11 @@ This repository contains the files that are created and modified within the scop
 ## Roulette games: 
 
 * `roulette-1.html` - The first version. The game counts the number of shots.
+* `roulette-gb.html` - The example from the Geek Brains website. 
+* `roulette-3.html` - The second version:
+  * Now the game asks whether a user wants to play the game.
+  * The game asks users whether they want to continue playing in case if the previous round was successful.
+  * The game calls users' names in case if they quit playing.  
   
 ## P.S.
 * `cat.html` - Verify the cat's essence.
