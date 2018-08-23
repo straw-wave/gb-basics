@@ -8,8 +8,12 @@ This repository contains the files that are created and modified within the scop
 * `multiplication.html` - The multiplication action (`var`, `prompt`).
 * `if-else-if-else.html` - The `if - else if - if` statement.
 * `parseInt.html` - The `parseInt()` function.
+
+## Cycles
+
 * `cycle-while.html` - The WHILE cycle.
 * `cycle-do.html` - The DO cycle.
+* `cycle-for.html` - The FOR cycle (in this case the cycle is used for the bank calculation).
 
 ## Puzzle games:
 
