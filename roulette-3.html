@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<script>
+var bullet;	
+var round = 0;
+var cont;
+
+var play = prompt("Would you like to play the Russian roulette?");
+if (play == "yes" || play == "Yes" || play == 1) {
+		alert("Here comes the first shot!") 
+		do { bullet = parseInt((Math.random() * 6) +1 );
+			if (bullet == 1) {
+				break;
+			}
+			round++;
+		} while (cont = prompt("You survived! Type 1 to pull the trigger once again. Type anything else to quit like a wuss.") == "1");
+		if (cont != "1") {
+		alert("Wuss! Get out! You played " + round + " rounds.")	
+		}
+		else if (bullet == 1) {
+		alert("Wasted! You survived " + round + " rounds.");
+		}
+} else {
+	alert("Pffft! What a pussy!")
+}
+</script>
