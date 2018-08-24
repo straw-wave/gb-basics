@@ -41,7 +41,8 @@ This repository contains the files that are created and modified within the scop
   * The game calls a user pussy if he agrees to play and refuses to make a first shot.
   * The game informs a user about his tragic destiny if he is done after the first round.
   * The game calculates the total number of rounds whether a user is done or whether he quits after a successful round. 
-* `roulette-6.html` - The fourth version with improved logic.  
+* `roulette-6.html` - The fourth version with improved logic.
+* `roulette-8.html` - The fifth version: the game reacts differently when a user quits after the first round and when he quits after several ones.  
   
 ## P.S.
 * `cat.html` - Verify the cat's essence.
