@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+<script>
+var bullet;
+var round = 0;
+var cont = 0;
+var play = prompt("Want to play?");
+ // PLAY SECTION
+if (play == 1)
+	cont = prompt("The first shot?");
+// RUNNING AWAY BEFORE 1 SHOT = PUSSY! 
+	if (play == 1 && cont != 1) {
+		alert ("So you ARE a pussy. You have " + round + " rounds. GTFO!");
+	}
+// PLAYING THE ROULETTE
+	while (cont == 1 && bullet != 1) {
+		bullet = bullet = parseInt((Math.random() * 6) +1 );
+		round++;
+// KILLED AFTER THE FIRST SHOT
+		if (bullet == 1 && round == 1) {
+		alert("Done right away! " + round + " round!");	
+		break;
+		}
+// SURVIVED AFTER A ROUND
+		alert("You survived " + round + " rounds.");
+// CONTINUE TO PLAY?
+		cont = prompt("Shoot?");
+		if (cont != 1) {
+			alert ("Still a pussy! You survived " + round + " rounds.");
+			break;
+		}
+	} 
+// KILLED AFTER SEVERAL ROUNDS
+	if (cont == 1 && bullet == 1 && round != 1) {
+		alert("Fucking done! You've made through " + round + " rounds.");
+	} 
+// INSTANT PUSSY SECTION
+if (play != 1 && cont == 0) {
+alert("You are an instant pussy!")
+}
+</script>
