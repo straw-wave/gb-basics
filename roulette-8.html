@@ -1,0 +1,46 @@
+<meta charset="utf-8">
+<script>
+var bullet;
+var round = 0;
+var cont = 0;
+var play = prompt("Hello, stranger! Do you want to play the Russian roulette? If you do, press 1. In this state-of-art game 1 stands for yes, and any other symbols stand for no. So do you want to try your luck?");
+// PLAY SECTION
+// FIRST SHOT SECTION 
+if (play == 1)
+	cont = prompt("All right, then. Here comes your first shot. Pull the trigger!");
+	bullet = parseInt((Math.random() * 6) +1 );
+	if (cont == 1 && bullet == 1 && round == 0) {
+	alert("Aaaand you are done right away! Instant karma! Even the revolver doesn't like you. " + round + " rounds!");
+	}
+// RUNNING AWAY BEFORE 1 SHOT = PUSSY! 
+	if (play == 1 && cont != 1) {
+		alert ("First you want to play, now you want to quit just before the real fun starts. So actually you ARE a pussy. You have " + round + " rounds. Get the fuck out of here, you shitty pussy hurts!");
+	}
+// PLAYING THE ROULETTE
+	while (cont == 1 && bullet != 1) {
+		round++;
+// SURVIVED AFTER A ROUND
+		alert("You survived " + round + " rounds.");
+// CONTINUE TO PLAY?
+		cont = prompt("Another shot?");
+		if (cont != 1) {
+			if (round == 1) {
+			alert ("Look at this candy ass! You survived only " + round + " round and you are already running away! Pathetic.");
+			break;
+			} else {
+				alert ("Well, it looks like you are a pussy after all! You survived " + round + " rounds. Now wipe your tears and go celebrate.");
+			break;
+			}			
+		} if (cont ==1) {
+			bullet = parseInt((Math.random() * 6) +1 );
+		}
+	} 
+// KILLED AFTER SEVERAL ROUNDS
+	if (cont == 1 && bullet == 1 && round != 0) {
+		alert("You are fucking done! You've made through " + round + " rounds. Now will someone bring us another player? There are lots of bullets for everyone.");
+	} 
+// INSTANT PUSSY SECTION
+if (play != 1 && cont == 0) {
+alert("You are an instant pussy! Oh, you are a tiny piece of mouse shit. Get lost!")
+}
+</script>
