@@ -2,6 +2,9 @@
 
 This repository contains the files that are created and modified within the scope of the Geek Brains course **Fundamentals of programming**.
 
+### Note
+Some files ("old" versions of "games", for instance) are not deleted on purpose, so I can check all the versions later.
+
 ## Files:
 
 * `hello.html` - The first step.
