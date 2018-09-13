@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<script>
+	var noun = ["beast", "monster", "creature", "pumpkin", "ass"];
+	var adj = ["fat", "fluffy", "stinky", "creepy", "disgusting", "lame"];
+	function randomNumber(min, max) {
+		return Math.floor(Math.random()*(max-min+1)+min);
+	}
+	function createNoun() {
+		return noun[randomNumber(0, noun.length-1)];
+	}
+	function createAdj() {
+		return adj[randomNumber(0, noun.length-1)];
+	}
+	var finalNoun = [createNoun()];
+	var finalAdj = [createAdj()];
+	alert("Today you can call your cat a " + finalAdj + " " + finalNoun + "."); 
+</script>
