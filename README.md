@@ -49,3 +49,4 @@ This repository contains the files that are created and modified within the scop
 
 ## P.S.
 * `cat.html` - Verify the cat's essence.
+* `cat-namer.html` - Pick a nickname for your cat. 
